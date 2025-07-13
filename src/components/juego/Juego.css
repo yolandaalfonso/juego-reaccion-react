@@ -1,0 +1,193 @@
+.juego-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 20px;
+  }
+  
+  .juego-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .juego-titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Selector de dificultad */
+  .dificultad-selector {
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .checkbox-input {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  
+  /* Mensaje de estado */
+  .mensaje-estado {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  /* Botón del juego */
+  .boton-container {
+    margin-bottom: 20px;
+  }
+  
+  .boton-juego {
+    width: 250px;
+    height: 250px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .boton-juego:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .boton-juego:active {
+    transform: translateY(0);
+  }
+  
+  .boton-juego.rojo {
+    background: #f44336;
+  }
+  
+  .boton-juego.rojo:hover {
+    background: #d32f2f;
+  }
+  
+  .boton-juego.amarillo {
+    background: #ffeb3b;
+    color: #333;
+    animation: pulso 0.5s infinite alternate;
+  }
+  
+  .boton-juego.amarillo:hover {
+    background: #fdd835;
+  }
+  
+  .boton-juego.deshabilitado {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* Animación para el estado amarillo */
+  @keyframes pulso {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+  
+  /* Instrucciones */
+  .instrucciones {
+    margin-bottom: 20px;
+  }
+  
+  .instrucciones p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  /* Ranking */
+  .ranking {
+    background: #f1f8e9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .ranking-titulo {
+    color: #388e3c;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .ranking-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+  
+  .ranking-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 0.9rem;
+    color: #2e7d32;
+    border-bottom: 1px solid #c8e6c9;
+  }
+  
+  .ranking-item:last-child {
+    border-bottom: none;
+  }
+  
+  .boton-limpiar {
+    background: #666;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .boton-limpiar:hover {
+    background: #555;
+  }
+  
+ 
+  @media (max-width: 480px) {
+    .juego-card {
+      padding: 20px;
+    }
+    
+    .boton-juego {
+      width: 200px;
+      height: 200px;
+      font-size: 1rem;
+    }
+    
+    .juego-titulo {
+      font-size: 1.5rem;
+    }
+  }
+

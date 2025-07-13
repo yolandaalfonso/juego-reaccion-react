@@ -1,0 +1,48 @@
+.boton-container {
+    margin-bottom: 20px;
+  }
+  
+.boton-juego {
+    width: 250px;
+    height: 250px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+.boton-juego:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+.boton-juego:active {
+    transform: translateY(0);
+  }
+  
+.boton-juego.rojo {
+    background: #f44336;
+  }
+  
+.boton-juego.rojo:hover {
+    background: #d32f2f;
+  }
+  
+.boton-juego.amarillo {
+    background: #ffeb3b;
+    color: #333;
+    animation: pulso 0.5s infinite alternate;
+  }
+  
+.boton-juego.amarillo:hover {
+    background: #fdd835;
+  }
+  
+.boton-juego.deshabilitado {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
